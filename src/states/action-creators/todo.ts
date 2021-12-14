@@ -31,10 +31,9 @@ export const fetchData =
 
 export const createTodo =
   (value: { task: string }) => async (dispatch: Dispatch<TodoAction>) => {
-    console.log(value)
     try {
       const { data } = await http.createTodo(value);
-      console.log(data)
+      
       dispatch({
         type: TodoActionTypes.CREATE_TODO,
         payload: data.data,
