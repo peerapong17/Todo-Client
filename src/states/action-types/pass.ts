@@ -1,0 +1,6 @@
+export enum PassActionTypes {
+  CLEAR = "CLEAR_PASSWORD_ERROR",
+  ERROR = "PASSWORD_ERROR",
+  SUCCESS = "SUCCESS",
+  LOADING = "PASSWORD_LOADING",
+}
