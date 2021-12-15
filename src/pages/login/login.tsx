@@ -51,7 +51,7 @@ const Login: React.FC = () => {
   });
 
   const googleLogin = async () => {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open(`${process.env.REACT_APP_API}/auth/google`, "_self");
   };
 
   return (
