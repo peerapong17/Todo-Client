@@ -9,6 +9,7 @@ export const enterEmail = (value: {
   }>
 > =>
   http.request<{ message: string }>({
+    method: "POST",
     data: value,
     url: "/enter-email",
   });
@@ -23,6 +24,7 @@ export const enterNewPassword = (
   }>
 > =>
   http.request<{ message: string }>({
+    method: "POST",
     data: value,
     url: `/enter-new-password/${userId}/${token}`,
   });
