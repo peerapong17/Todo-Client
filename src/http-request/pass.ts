@@ -11,7 +11,7 @@ export const enterEmail = (value: {
   http.request<{ message: string }>({
     method: "POST",
     data: value,
-    url: "/enter-email",
+    url: "/reset-password/enter-email",
   });
 
 export const enterNewPassword = (
@@ -26,5 +26,5 @@ export const enterNewPassword = (
   http.request<{ message: string }>({
     method: "POST",
     data: value,
-    url: `/enter-new-password/${userId}/${token}`,
+    url: `/reset-password/enter-new-password/${userId}/${token}`,
   });
